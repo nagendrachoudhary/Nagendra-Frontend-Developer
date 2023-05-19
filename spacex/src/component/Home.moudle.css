@@ -1,0 +1,82 @@
+
+.Banner{
+display: flex;
+text-align: center;
+background-color: azure;
+}
+
+.Banner img{
+width: 50%;
+}
+.Banner p{
+    margin: auto;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.allCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card {
+    text-align: center;
+    margin: 50px;
+    width: 50%;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card::after{
+    content: "";
+    transition: 100ms;
+
+}
+.noData{
+    margin: auto;
+    width: 50vw;
+}
+.page{
+    display: flex;
+    justify-content: center;
+}
+.page button{
+    width: 50px;
+    height: 30px;
+}
+.page button:first-child{
+    margin-right: 10px;
+    background-color: aqua;
+} 
+.page button:last-child{
+    margin-left: 10px;
+    background-color: aqua;
+}    
+#Loading{
+    margin: auto;
+    width: 50vw;
+}
+.search{
+    margin: auto;
+    width: 100vw;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(2,1fr);
+}
+.search input{
+    width: 30vw;
+    height: 50px;
+    
+}
+@media screen and (max-width: 480px) {
+    .card {
+        text-align: center;
+        margin: 50px;
+        width: 60vw;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .allCards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
